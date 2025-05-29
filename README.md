@@ -7,7 +7,7 @@ When the HIT POINT is less than half of the total HP (<10), check whether there 
    - If there is a healing potion, the Log will prompt "Warning: Low health! Using healing potion."
      
    - If there is no healing potion, the Log will prompt "No healing potion."
-    
+
 Tip: Set the character born with a healing potion
 
 ### Design Pattern
@@ -18,7 +18,10 @@ Object-Oriented Programming (OOP): **Strategy + Factory Design Pattern**
 **Factory Design Pattern** - Maintain the instantiation logic of all potion strategies
 
 
---------------------------------------------------------------------------------------------------------
+
+------
+
+
 
 ## 02 Implement a logging system that records key runtime events related to mob behaviour
 
@@ -32,4 +35,5 @@ The system must log the following event information with event timestamps and mo
      
    - Target assignment: Log when the mob sets or changes its target.
      
+
 Logs must be clearly formatted, printed to the terminal, and persisted to a log file. Logging must not disrupt game performance.
