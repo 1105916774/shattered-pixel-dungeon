@@ -1,40 +1,27 @@
-# shattered-pixel-dungeon-3.0.2 Quality Improvement
+# Shattered Pixel Dungeon - Final
 
-## 01 Smart Potion Recommendations - Healing Potion
+[Shattered Pixel Dungeon](https://shatteredpixel.com/shatteredpd/) is an open-source traditional roguelike dungeon crawler with randomized levels and enemies, and hundreds of items to collect and use. It's based on the [source code of Pixel Dungeon](https://github.com/00-Evan/pixel-dungeon-gradle), by [Watabou](https://www.watabou.ru).
 
-When the HIT POINT is less than half of the total HP (<10), check whether there is a healing potion in the bag:
+Shattered Pixel Dungeon currently compiles for Android, iOS, and Desktop platforms. You can find official releases of the game on:
 
-   - If there is a healing potion, the Log will prompt "Warning: Low health! Using healing potion."
-     
-   - If there is no healing potion, the Log will prompt "No healing potion."
+[![Get it on Google Play](https://shatteredpixel.com/assets/images/badges/gplay.png)](https://play.google.com/store/apps/details?id=com.shatteredpixel.shatteredpixeldungeon)
+[![Download on the App Store](https://shatteredpixel.com/assets/images/badges/appstore.png)](https://apps.apple.com/app/shattered-pixel-dungeon/id1563121109)
+[![Steam](https://shatteredpixel.com/assets/images/badges/steam.png)](https://store.steampowered.com/app/1769170/Shattered_Pixel_Dungeon/)<br>
+[![GOG.com](https://shatteredpixel.com/assets/images/badges/gog.png)](https://www.gog.com/game/shattered_pixel_dungeon)
+[![Itch.io](https://shatteredpixel.com/assets/images/badges/itch.png)](https://shattered-pixel.itch.io/shattered-pixel-dungeon)
+[![Github Releases](https://shatteredpixel.com/assets/images/badges/github.png)](https://github.com/00-Evan/shattered-pixel-dungeon/releases)
 
-Tip: Set the character born with a healing potion
+If you like this game, please consider [supporting me on Patreon](https://www.patreon.com/ShatteredPixel)!
 
-https://github.com/user-attachments/assets/7bbc8e5b-ffec-46c0-829c-181513822434
+There is an official blog for this project at [ShatteredPixel.com](https://www.shatteredpixel.com/blog/).
 
-### Design Pattern
+The game also has a translation project hosted on [Transifex](https://www.transifex.com/shattered-pixel/shattered-pixel-dungeon/).
 
-Object-Oriented Programming (OOP): **Strategy + Factory Design Pattern**
+Note that **this repository does not accept pull requests!** The code here is provided in hopes that others may find it useful for their own projects, not to allow community contribution. Issue reports of all kinds (bug reports, feature requests, etc.) are welcome.
 
-**Strategy Design Pattern** - Encapsulate the checking logic of each potion independently (healing potion, strength potion, etc)
-
-**Factory Design Pattern** - Maintain the instantiation logic of all potion strategies
-
-![Strategy + Factory Design Pattern](https://github.com/user-attachments/assets/1082b448-3cf4-47b6-abaf-f86015f7d9a7)
-
-
-------------------------------------
-
-## 02 Implement a logging system that records key runtime events related to mob behaviour
-
-The system must log the following event information with event timestamps and mob identifiers:
-
-   - Mob spawn: Log when a mob is first added to the level.
-     
-   - State transitions: Log every time the mob’s state changes.
-     
-   - Alert status: Log when the mob becomes alerted.
-     
-   - Target assignment: Log when the mob sets or changes its target.
-     
-Logs must be clearly formatted, printed to the terminal, and persisted to a log file. Logging must not disrupt game performance.
+If you'd like to work with the code, you can find the following guides in `/docs`:
+- [Compiling for Android.](docs/getting-started-android.md)
+    - **[If you plan to distribute on Google Play please read the end of this guide.](docs/getting-started-android.md#distributing-your-apk)**
+- [Compiling for desktop platforms.](docs/getting-started-desktop.md)
+- [Compiling for iOS.](docs/getting-started-ios.md)
+- [Recommended changes for making your own version.](docs/recommended-changes.md)
