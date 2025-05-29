@@ -10,6 +10,8 @@ When the HIT POINT is less than half of the total HP (<10), check whether there 
 
 Tip: Set the character born with a healing potion
 
+https://github.com/user-attachments/assets/7bbc8e5b-ffec-46c0-829c-181513822434
+
 ### Design Pattern
 
 Object-Oriented Programming (OOP): **Strategy + Factory Design Pattern**
@@ -17,6 +19,9 @@ Object-Oriented Programming (OOP): **Strategy + Factory Design Pattern**
 **Strategy Design Pattern** - Encapsulate the checking logic of each potion independently (healing potion, strength potion, etc)
 
 **Factory Design Pattern** - Maintain the instantiation logic of all potion strategies
+
+![Strategy + Factory Design Pattern](https://github.com/user-attachments/assets/1082b448-3cf4-47b6-abaf-f86015f7d9a7)
+
 
 ------------------------------------
 
