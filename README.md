@@ -1,6 +1,6 @@
 # shattered-pixel-dungeon-3.0.2 Quality Improvement
 
-## 01 Smart Potion Recommendations - Healing Potion
+01 Smart Potion Recommendations - Healing Potion
 
 When the HIT POINT is less than half of the total HP (<10), check whether there is a healing potion in the bag:
 
@@ -17,13 +17,9 @@ Object-Oriented Programming (OOP): **Strategy + Factory Design Pattern**
 
 **Factory Design Pattern** - Maintain the instantiation logic of all potion strategies
 
+------------------------------------
 
-
-------
-
-
-
-## 02 Implement a logging system that records key runtime events related to mob behaviour
+02 Implement a logging system that records key runtime events related to mob behaviour
 
 The system must log the following event information with event timestamps and mob identifiers:
 
@@ -35,5 +31,4 @@ The system must log the following event information with event timestamps and mo
      
    - Target assignment: Log when the mob sets or changes its target.
      
-
 Logs must be clearly formatted, printed to the terminal, and persisted to a log file. Logging must not disrupt game performance.
